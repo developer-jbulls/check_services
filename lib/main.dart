@@ -14,8 +14,7 @@ class ProviderWidget extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider(
-          create: (_) => AppState(context),
-          dispose: (_, state) => state.dispose(),
+          create: (_) => AppState(),
         ),
       ],
       child: const MyApp(),
